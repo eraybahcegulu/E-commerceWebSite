@@ -1,0 +1,113 @@
+
+        var countDownDate = new Date("04 01 2022 15:42:25").getTime();
+        
+        var x = setInterval(function() {
+        
+            // Sistem saatini alıyoruz
+            var now = new Date().getTime();
+            
+            // Geri sayımla şimdi saat arasındaki zamanı ölçüyoruz
+            var distance = countDownDate - now;
+            
+            // Gün, Saat, Dakika, Saniye işlemleri yapılıyor
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Anlık olarak id="gerisayim1" içine aktarılıyor
+            document.getElementById("gerisayim1").innerHTML = days + " gün | " + hours + " saat | "
+            + minutes + " dakika | " + seconds + " saniye";
+            
+            // Süre dolduğunda yazacak yazı.
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("gerisayim1").innerHTML = "Süre doldu";
+            }
+        }, 1000);
+
+        var countDownDate = new Date("04 01 2022 15:42:25").getTime();
+        
+        var x = setInterval(function() {
+        
+            // Sistem saatini alıyoruz
+            var now = new Date().getTime();
+            
+            // Geri sayımla şimdi saat arasındaki zamanı ölçüyoruz
+            var distance = countDownDate - now;
+            
+            // Gün, Saat, Dakika, Saniye işlemleri yapılıyor
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Anlık olarak id="gerisayim2" içine aktarılıyor
+            document.getElementById("gerisayim2").innerHTML = days + " gün | " + hours + " saat | "
+            + minutes + " dakika | " + seconds + " saniye";
+            
+            // Süre dolduğunda yazacak yazı.
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("gerisayim2").innerHTML = "Süre doldu";
+            }
+        }, 1000);
+
+        var countDownDate = new Date("04 01 2022 15:42:25").getTime();
+        
+        var x = setInterval(function() {
+        
+            // Sistem saatini alıyoruz
+            var now = new Date().getTime();
+            
+            // Geri sayımla şimdi saat arasındaki zamanı ölçüyoruz
+            var distance = countDownDate - now;
+            
+            // Gün, Saat, Dakika, Saniye işlemleri yapılıyor
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Anlık olarak id="gerisayim3" içine aktarılıyor
+            document.getElementById("gerisayim3").innerHTML = days + " gün | " + hours + " saat | "
+            + minutes + " dakika | " + seconds + " saniye";
+            
+            // Süre dolduğunda yazacak yazı.
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("gerisayim3").innerHTML = "Süre doldu";
+            }
+        }, 1000);
+
+        var countDownDate = new Date("04 01 2022 15:42:25").getTime();
+        
+        var x = setInterval(function() {
+        
+            // Sistem saatini alıyoruz
+            var now = new Date().getTime();
+            
+            // Geri sayımla şimdi saat arasındaki zamanı ölçüyoruz
+            var distance = countDownDate - now;
+            
+            // Gün, Saat, Dakika, Saniye işlemleri yapılıyor
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Anlık olarak id="gerisayim4" içine aktarılıyor
+            document.getElementById("gerisayim4").innerHTML = days + " gün | " + hours + " saat | "
+            + minutes + " dakika | " + seconds + " saniye";
+            
+            // Süre dolduğunda yazacak yazı.
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("gerisayim4").innerHTML = "Süre doldu";
+            }
+        }, 1000);
+
+
+
+
+   

@@ -1,0 +1,174 @@
+<div id="left-bar">
+
+
+
+    <div id="arama">
+        <form action="/search_index" method="GET">
+
+
+            <input style="float:left;" class="arama" type="text" name="look" placeholder="Fırsat Ürünü Ara">
+            <button id="arama-buton" type="submit" style="float:right;"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+
+        </form>
+    </div>
+
+
+    <div style="float:left" id="menu">
+        <ul>
+            <li>
+                <a href="islemci"></i>İşlemci</a>
+            </li>
+            <li>
+                <a href="ekran_karti"></i>Ekran Kartı</a>
+            </li>
+            <li>
+                <a href="anakart">Anakart</a>
+            </li>
+            <li>
+                <a href="ram">RAM</a>
+            </li>
+            <li>
+                <a href="depolama">Depolama</a>
+            </li>
+            <li>
+                <a href="bilgisayar_kasa">Bilgisayar Kasası</a>
+            </li>
+            <li>
+                <a href="sogutucu">İşlemci Soğutucu</a>
+            </li>
+            <li>
+                <a href="psu">Güç Kaynağı</a>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+{{#if sessionFlash.message}}
+<div style="font-size:15px; position:absolute; top:0;  width:400px; height:40px; margin-left:10%; text-align:center;"
+    class="{{sessionFlash.type}}">
+    {{sessionFlash.message}}
+</div>
+{{/if}}
+<div id="section-firsatlar" style="text-align: center;">
+
+    <div id="gerisayim1"></div>
+
+    {{#each firsaturunu}}
+    <div id="firsat1" class="firsatlar">
+
+        <p class="blink"><i class="fa-solid fa-tags"></i> FIRSAT ÜRÜNÜ !</p>
+
+
+        <p style="color:rgb(47, 163, 47); font-size: 28px;">{{firsat_fiyat}}₺&nbsp;&nbsp;
+            <del style="color:black; font-size: 14px;">{{eski_fiyat}}₺</del>
+        </p>
+        <a href="#">
+            <img src="{{firsat_resim}}" alt="">
+        </a>
+        <p>{{firsat_ad}}</p>
+        <br>
+
+        <a href="giris_yap">
+            <button style="font-size: 17px;" class="satin-al-button">&nbsp;<i
+                    class="fa-solid fa-cart-shopping"></i>&nbsp;Sepete Ekle&nbsp;</button>
+        </a>
+        <button title="Karşılaştır" onclick="window.location.href = '#';" class="karsilastir-buton"><i
+                class="fa-solid fa-arrow-right-arrow-left"></i></button>
+
+
+
+
+    </div>
+
+    {{/each}}
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="section-cok-satanlar" style="text-align: center;">
+    <div id="cok-satan1" class="cok-satanlar">
+        <p style="color:rgb(202, 25, 202);"><i class="fa-solid fa-star"></i> ÇOK SATANLAR !</p>
+
+        <a href="#">
+            <img src="images/Depolama/samsung_870_240_sata_ssd.jpg" alt="">
+        </a>
+        <p>Samsung 250GB 870 EVO SATA 3.0 SSD (Okuma 560MB / Yazma 530MB)</p>
+        <br>
+        <p style="color:rgb(47, 163, 47); font-size: 25px;">799₺&nbsp;&nbsp;
+            <a href="giris_yap">
+                <button style="font-size: 17px;" class="satin-al-button">&nbsp;<i
+                        class="fa-solid fa-cart-shopping"></i>&nbsp;Sepete Ekle&nbsp;</button>
+            </a>
+            <button title="Karşılaştır" onclick="window.location.href = '#';" class="karsilastir-buton"><i
+                    class="fa-solid fa-arrow-right-arrow-left"></i></button>
+
+        </p>
+    </div>
+
+    <div id="cok-satan2" class="cok-satanlar">
+        <p style="color:rgb(202, 25, 202);"><i class="fa-solid fa-star"></i> ÇOK SATANLAR !</p>
+        <a href="#">
+            <img src="images/Ekran_karti/msi_3050.jpg" alt="">
+        </a>
+        <p>MSI GEFORCE RTX 3050 GAMING X 8GB GDDR6 128Bit NVIDIA Ekran Kartı</p>
+        <br>
+        <p style="color:rgb(47, 163, 47); font-size: 25px;">10.199₺&nbsp;&nbsp;
+            <a href="giris_yap">
+                <button style="font-size: 17px;" class="satin-al-button">&nbsp;<i
+                        class="fa-solid fa-cart-shopping"></i>&nbsp;Sepete Ekle&nbsp;</button>
+            </a>
+            <button title="Karşılaştır" onclick="window.location.href = '#';" class="karsilastir-buton"><i
+                    class="fa-solid fa-arrow-right-arrow-left"></i></button>
+
+        </p>
+    </div>
+
+    <div id="cok-satan3" class="cok-satanlar">
+        <p style="color:rgb(202, 25, 202); "><i class="fa-solid fa-star"></i> ÇOK SATANLAR !</p>
+        <a href="#">
+            <img src="images/RAM/kingston_1x8.jpg" alt="">
+        </a>
+        <p>Kingston 8GB (1x8GB) Fury Beast Siyah DDR4 3600MHz CL17 PC Ram</p>
+        <br>
+        <p style="color:rgb(47, 163, 47);font-size: 25px;">799₺&nbsp;&nbsp;
+            <a href="giris_yap">
+                <button style="font-size: 17px;" class="satin-al-button">&nbsp;<i
+                        class="fa-solid fa-cart-shopping"></i>&nbsp;Sepete Ekle&nbsp;</button>
+            </a>
+            <button title="Karşılaştır" onclick="window.location.href = '#';" class="karsilastir-buton"><i
+                    class="fa-solid fa-arrow-right-arrow-left"></i></button>
+
+        </p>
+    </div>
+
+    <div id="cok-satan4" class="cok-satanlar">
+        <p style="color:rgb(202, 25, 202);"><i class="fa-solid fa-star"></i> ÇOK SATANLAR !</p>
+        <a href="#">
+            <img src="images/Islemci/ryzen5_5000.jpg" alt="">
+        </a>
+        <p>AMD Ryzen™5 5600X Soket AM4 + Wraith Stealth 3.7GHz 32MB 65W 7nm İşlemci</p>
+        <br>
+        <p style="color:rgb(47, 163, 47);font-size: 25px;">5.199₺&nbsp;&nbsp;
+            <a href="giris_yap">
+                <button style="font-size: 17px;" class="satin-al-button">&nbsp;<i
+                        class="fa-solid fa-cart-shopping"></i>&nbsp;Sepete Ekle&nbsp;</button>
+            </a>
+            <button title="Karşılaştır" onclick="window.location.href = '#';" class="karsilastir-buton"><i
+                    class="fa-solid fa-arrow-right-arrow-left"></i></button>
+
+        </p>
+    </div>
+
+
+</div>

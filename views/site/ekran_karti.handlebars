@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgisayar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ekran_karti_style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/title_icon.png">
+
+</head>
+
+<div id="left-bar">
+
+
+
+    <div id="arama">
+        <form action="/search_ekran_karti" method="GET">
+
+
+            <input style="float:left;" class="arama" type="text" name="look" placeholder="Ekran Kartı Ara">
+            <button id="arama-buton" type="submit" style="float:right;"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+
+        </form>
+    </div>
+
+
+    <div style="float:left" id="menu">
+        <ul>
+            <li>
+                <a href="islemci"></i>İşlemci</a>
+            </li>
+            <li>
+                <a href="ekran_karti"></i>Ekran Kartı</a>
+            </li>
+            <li>
+                <a href="anakart">Anakart</a>
+            </li>
+            <li>
+                <a href="ram">RAM</a>
+            </li>
+            <li>
+                <a href="depolama">Depolama</a>
+            </li>
+            <li>
+                <a href="bilgisayar_kasa">Bilgisayar Kasası</a>
+            </li>
+            <li>
+                <a href="sogutucu">İşlemci Soğutucu</a>
+            </li>
+            <li>
+                <a href="psu">Güç Kaynağı</a>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+
+<div id="section-urunler">
+
+
+
+
+    <div id="section-menu" style="align-items: center;">
+        <div class="section-menu-1" style="margin-left: 50px; margin-top:8px; float:left;">
+            <a style="color:blue;" href="index">Ana Sayfa&nbsp; </a> <i class="fa-solid fa-angle-right"></i>
+            <a style="color:black;" href="ekran_karti">&nbsp; Ekran Kartları</a>
+        </div>
+
+
+
+
+
+        <div class="section-menu-2" style=" margin-top:8px; margin-right: 50px; font-size:13px">
+            <select style="border:2px solid orange; border-radius: 30px; padding:3px;" name="siralama" id="sirala">
+                <option>En Çok Satanlar</option>
+                <option>En Yeniler </option>
+                <option>Fiyata Göre Artan</option>
+                <option>Fiyata Göre Azalan</option>
+            </select>
+        </div>
+
+
+    </div>
+
+    {{#each ekran_kartlari}}
+    <div class="urunler">
+        <button title="Karşılaştır" onclick="window.location.href = '#';" class="karsilastir-buton"><i
+                class="fa-solid fa-arrow-right-arrow-left"></i></button>
+
+        <a href="#">
+            <img src="{{ekran_karti_resim}}" alt="">
+        </a>
+
+        <br>
+        <p>{{ekran_karti_ad}}</p>
+        <br>
+        <p style="color:rgb(47, 163, 47); font-size:25px;">{{ekran_karti_fiyat}}₺&nbsp;&nbsp;
+            <a href="giris_yap">
+                <button style="font-size: 17px;" class="urunler-button">&nbsp;<i
+                        class="fa-solid fa-cart-shopping"></i>&nbsp;Sepete Ekle&nbsp;</button>
+            </a>
+
+        </p>
+    </div>
+    {{/each}}
+
+
+
+
+
+</div>

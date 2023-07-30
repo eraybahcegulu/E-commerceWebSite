@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Nunito;
+    font-size:1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    
+    list-style-type: none;
+}
+
+#nav-links .nav-icon{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+}
+
+@media (min-width:576px){
+    
+    .container{
+        max-width: 540px;
+    }
+
+    html{
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width:768px){
+
+    .container{
+        max-width: 720px;
+    }
+
+    html{
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width:992px){
+    
+    .container{
+        max-width: 960px;
+    }
+
+    html{
+        font-size: 11px;
+    }
+
+}
+
+@media (min-width:1200px){
+    
+    .container{
+        max-width: 1140px;
+    }
+
+    html{
+        font-size: 11px;
+    }
+}
+
+@media (min-width:1500px){
+    
+    .container{
+         max-width: 1450px;
+    }
+        
+     html{
+         font-size: 12px;
+    }
+}
+
+@media (min-width:1800px){
+    
+    .container{
+        max-width: 1750px;
+    }
+    
+     html{
+         font-size: 12px;
+    }
+
+}
+
+@media (min-width:2200px){
+    
+    .container{
+        max-width: 2150px;
+    }
+    
+     html{
+         font-size: 12px;
+    }
+
+}
+
+@media (min-width:2555px){
+    
+    .container{
+        max-width: 2505px;
+    }
+    
+     html{
+         font-size: 12px;
+    }
+
+}
+
+nav{
+    display: flex;
+    background-color: orange;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-height: 145px;
+    min-height: 145px;
+}
+
+#logo-box{
+    float: left;
+    padding-top: 0.8rem;
+}
+
+#logo-box .logo{
+    color:#fff;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+#nav-links{
+    float: right;
+}
+
+#nav-links .nav-item{
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-icon{
+    padding-top: 1rem;
+}
+
+#nav-links .nav-link{
+    font-size: 1.6rem;
+    color:#fff;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    transition: color 0.4s;
+}
+
+#nav-links .nav-link:hover{
+    color: gray;
+}
+
+
+@media (max-width: 800px){
+    #logo-box{
+        float: none;
+        text-align: left;
+    }
+    
+    #nav-links{
+        float: none;
+    }
+
+    #nav-links .nav-link{
+        font-size: 2rem;
+        padding-left: 0;
+        float: right;
+    }
+
+    #nav-links .nav-item{
+        float: none;
+        text-align: left;
+
+    }
+
+    #nav-links .nav-icon{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+    
+    #nav-links.responsive li:not(:first-child)
+    {
+        display: none;
+    }
+
+    
+        
+}
+
+#menu{
+    
+    list-style: none;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    min-width: 200px;
+    background: gray;
+    float:left;
+
+}
+
+#menu ul li{
+    text-align: center;
+    margin: 30px;
+    
+    
+}
+
+#menu ul li a{
+    padding: 10px;
+    font-size:13px;
+}
+
+#menu ul li a:hover{
+    color: orange;
+}
+
+#section-i{
+    width: 100%;
+    height: 30px;
+    float:left;
+    background-color: gray;
+    margin-top: 240px;
+
+}
+
+.i h4{
+    color: white;
+    text-align: center;
+}
+
+.i h4:hover{
+    color:orange;
+}
+
+
+#gotopbuton{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    bottom:50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color:white;
+    border-radius: 100%;
+}
+
+@media (max-height: 800px){
+
+    #gotopbuton{
+        display: none ;
+    }
+
+    
+
+}
+
+.hesap-ayarlari button{
+    font-size: 15px;
+}
+
+#siparislerim{
+    margin-left: 220px;
+    margin-top: 10px;
+    width: auto;
+    height: 100%;
+}
+
+#header{
+    width: auto;
+    margin-left: 30px;
+}
+
+.items{
+    float:left;
+    margin-inline-end: 50px;
+}
+
+.siparisler{
+    float: left;
+    border:2px solid gray;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 1300px;
+    height: 100px;
+    background-color: white;
+    overflow: auto;
+}
+
+.items button{
+    padding: 5px;
+    border:2px solid orange;
+    border-radius: 20px;
+    cursor: pointer;
+    background: white;
+}
+
+.items button:hover{
+    background: orange;
+    border:2px solid orange;
+    color:white;
+}
+
+@media (max-width: 1200px){
+
+    #left-bar{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+   
+    #menu{
+    
+        list-style: none;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 95%;
+        background: gray;
+        float:left;
+    
+    }
+
+    #siparislerim{
+        float:left;
+        margin-left: 10px;
+
+    }
+
+    .siparisler{
+        float: left;
+        border:2px solid gray;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 400px;
+        height: auto;
+        background-color: white;
+    }
+
+    .items{
+        float:none;
+        margin:20px;
+    }
+
+
+}
+
+#hesap-ayarlari{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 1650px;
+    width: 200px;
+    height: 720px;
+    background: white;
+    border: 2px solid gray;
+}
+
+
+.hesap-ayarlari{
+    text-align: center;
+    margin-bottom: 50px;
+    height: auto;
+    width: 40px;
+}
+
+.hesap-ayarlari button{
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100px;
+    border:2px solid gray;
+    cursor: pointer;
+}
+
+.hesap-ayarlari button:hover{
+    border:2px solid gray;
+    background-color: orange;
+    color:white;
+}
+
+@media (max-width: 1900px){
+
+    #hesap-ayarlari{
+        float:left;
+        margin-left: 250px;
+        width: 1300px;
+        height: 150px;
+        background: white;
+        border: 2px solid gray;
+    }
+    .hesap-ayarlari{
+        float:left;
+        text-align: center;
+        height: auto;
+        width: auto;
+    }
+
+    .hesap-ayarlari button{
+        margin-top: 20px;
+        float:left;
+        padding: 20px;
+        margin-left: 100px;
+        width: 200px;
+        height: auto;
+        border:2px solid gray;
+        cursor: pointer;
+    }
+
+    
+}
+
+@media screen and  (min-width:1200px) and (max-width: 1500px){
+
+    #hesap-ayarlari{
+        float:left;
+        margin-left: 250px;
+        width: 1300px;
+        height: 160px;
+        background: white;
+        border: 2px solid gray;
+    }
+    .hesap-ayarlari{
+        float:left;
+        text-align: center;
+        height: auto;
+        width: auto;
+    }
+
+    .hesap-ayarlari button{
+        margin-top: 25px;
+        float:left;
+        padding: 20px;
+        margin-left: 100px;
+        width: auto;
+        height: auto;
+        border:2px solid gray;
+        cursor: pointer;
+    }
+
+    
+}
+
+@media screen and (min-width:887px) and (max-width: 1200px){
+
+    #hesap-ayarlari{
+        float:left;
+        margin-left: 40px;
+        width: 830px;
+        height: 160px;
+        background: white;
+        border: 2px solid gray;
+    }
+    .hesap-ayarlari{
+        float:left;
+        text-align: center;
+        height: auto;
+        width: auto;
+    }
+
+    .hesap-ayarlari button{
+        margin-top: 25px;
+        float:left;
+        padding: 20px;
+        margin-left: 53px;
+        width: auto;
+        height: auto;
+        border:2px solid gray;
+        cursor: pointer;
+    }
+
+    
+}
+
+@media  (max-width: 886px){
+
+    #hesap-ayarlari{
+        margin-left: 40px;
+        margin-top: 20px;
+        width: 400px;
+        height: 600px;
+        background: white;
+        border: 2px solid gray;
+    }
+    
+    
+    .hesap-ayarlari{
+        margin-bottom: 0px;
+        height: auto;
+        width: auto;
+    }
+    
+    .hesap-ayarlari button{
+        margin-left: 100px;
+        margin-top: 40px;
+        padding: 15px;
+        width: 200px;
+        height: auto;
+        border:2px solid gray;
+        cursor: pointer;
+    }
+
+    
+}
+
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgisayar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/uye_ol_style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/title_icon.png">
+</head>
+<body>
+    <div class="uye-ol-ekrani">
+        <div class="form">
+            <form action="/uye_ol/uye_ol_test" method="POST">
+                <a style="text-decoration: none;" href="index.html"><p style="font-size: 40px; color:orange"><i class="fa-solid fa-microchip"></i>BILGISAYAR</p>
+                </a>
+                <br>
+                <div id="container" style="width:400px; height: 50px">
+                    <div>
+                        <input name="ad" style="width:48%; margin-top: 20px; float:left;" type="text" placeholder="Adınız">
+                    </div>
+                    <div>
+                        <input name="soyad" style="width:48%; margin-top: 20px; margin-left:10px; float:right;" type="text" placeholder="Soyadınız">
+                    </div>
+                    
+
+                </div>
+                
+                <input name="email" style="width: 100%;"type="email" placeholder="E-Posta Adresi">
+                <br>
+                <input name="password" style="width: 100%;"type="password" placeholder="Şifre">
+            
+                <div id="uyelik-sozlesme" style="width:400px; height: 20px; margin-top: 10px;">
+                    <div style="float:left;">
+                        <input class="uyelik-sozlesme-checkbox"type="checkbox" name="check">
+                    </div>
+                    <div style="float:left;">
+                        <p><a style="text-decoration: none;"href=""><strong style="color:purple">&nbsp;Üyelik Sözleşmesi</strong></a>'ni okudum, onaylıyorum.</p>
+                    </div>
+
+                </div>
+                
+                <button type="submit" style="margin-top: 20px;"class="uye-ol-button">Üye Ol</button>
+            </form>
+                <a href="giris_yap">
+                    <i style="color:orange; font-size:30px; float:left; margin-top:20px;" class="fa-solid fa-circle-chevron-left"></i>
+                 </a>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

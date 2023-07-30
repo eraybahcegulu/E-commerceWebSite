@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Nunito;
+    font-size:1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    
+    list-style-type: none;
+}
+
+
+
+#nav-links .nav-icon{
+    display: none;
+}
+
+
+
+.container{
+    width: 100%;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+}
+
+@media (min-width:576px){
+    
+    .container{
+        max-width: 540px;
+    }
+
+    html{
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width:768px){
+
+    .container{
+        max-width: 720px;
+    }
+
+    html{
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width:992px){
+    
+    .container{
+        max-width: 960px;
+    }
+
+    html{
+        font-size: 11px;
+    }
+
+}
+
+@media (min-width:1200px){
+    
+    .container{
+        max-width: 1140px;
+    }
+
+    html{
+        font-size: 11px;
+    }
+}
+
+@media (min-width:1500px){
+    
+    .container{
+         max-width: 1450px;
+    }
+        
+     html{
+         font-size: 12px;
+    }
+}
+
+@media (min-width:1800px){
+    
+    .container{
+        max-width: 1750px;
+    }
+    
+     html{
+         font-size: 12px;
+    }
+
+}
+
+@media (min-width:2200px){
+    
+    .container{
+        max-width: 2150px;
+    }
+    
+     html{
+         font-size: 12px;
+    }
+
+}
+
+@media (min-width:2555px){
+    
+    .container{
+        max-width: 2505px;
+    }
+    
+     html{
+         font-size: 12px;
+    }
+
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    background-color: orange;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-height: 145px;
+    min-height: 145px;
+}
+
+#logo-box{
+    float: left;
+    padding-top: 0.8rem;
+}
+
+#logo-box .logo{
+    color:#fff;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+#nav-links{
+    float: right;
+}
+
+#nav-links .nav-item{
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-icon{
+    padding-top: 1rem;
+}
+
+#nav-links .nav-link{
+    font-size: 1.6rem;
+    color:#fff;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    transition: color 0.4s;
+}
+
+#nav-links .nav-link:hover{
+    color: gray;
+}
+
+
+@media (max-width: 800px){
+    #logo-box{
+        float: none;
+        text-align: left;
+    }
+    
+    #nav-links{
+        float: none;
+    }
+
+    #nav-links .nav-link{
+        font-size: 2rem;
+        padding-left: 0;
+        float: right;
+    }
+
+    #nav-links .nav-item{
+        float: none;
+        text-align: left;
+
+    }
+
+    #nav-links .nav-icon{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+    
+    #nav-links.responsive li:not(:first-child)
+    {
+        display: none;
+    }
+        
+}
+
+#arama{
+    width: 210px;
+    height: 50px;
+    margin-left: 12px;
+    margin-top: 10px;
+    border:2px solid gray;
+    padding: 10px;
+}
+
+.arama{
+    font-size: 12px;
+    padding:3px;
+    width:150px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    
+}
+
+
+
+#arama-buton{ 
+    padding: 2px;
+    font-size: 15px;
+    background: orange;
+    border: 2px solid gray;
+    background: white;
+    color: orange;
+
+}
+
+#arama-buton:hover{
+    
+    background: orange;
+    border: 2px solid gray;
+    background: orange;
+    color: white;
+    cursor:pointer
+
+
+}
+
+#left-bar{
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+
+
+
+
+#menu{
+    
+    list-style: none;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    min-width: 200px;
+    
+    background: gray;
+    float:left;
+
+}
+
+#menu ul li{
+    text-align: center;
+    margin: 30px;
+    
+    
+}
+
+#menu ul li a{
+    padding: 10px;
+    font-size:13px;
+}
+
+#menu ul li a:hover{
+    color: orange;
+}
+
+
+
+
+
+#section-firsatlar{
+    position: relative;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+.firsatlar{
+    margin:55px;
+    float:left;
+    width: 300px;
+    transition: transform 300ms;
+}
+
+.firsatlar:hover{
+    transform: scale(1.1);
+    color:orange;
+}
+
+.satin-al-button{
+    padding: 4px;
+    background-color: white;
+    border: 2px solid orange;
+    color: orange;
+    border-radius: 50px;
+}
+
+.satin-al-button:hover {
+    background-color: orange;
+    color: white;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+
+
+
+
+
+#section-cok-satanlar{
+    position: relative;
+    margin-left: 250px;
+    float: left;
+}
+
+.cok-satanlar{
+    margin:55px;
+    float:left;
+    width: 300px;
+    transition: transform 300ms;
+}
+
+.cok-satanlar:hover{
+    transform: scale(1.1);
+    color:orange;
+    display: normal;
+    
+    
+}
+
+
+#section-i{
+    margin-top: 100px;
+    width: 100%;
+    height: 40px;
+    float:left;
+    background-color: gray;
+}
+
+.i h4{
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.i h4:hover{
+    color:orange;
+}
+
+#gerisayim1{
+    margin-top: 30px;
+    color:red;
+    margin-right: 50px;
+}
+
+@media (max-width: 550px){
+
+    #left-bar{
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #gerisayim1{
+        width: 400px;
+        margin-left: 0px;
+        margin-top: 30px;
+        float:left;
+    }
+    
+
+   
+    #menu{
+    
+        list-style: none;
+        padding: 5px;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 95%;
+        background: gray;
+        float:left;
+    
+    }
+
+    #section-firsatlar{  
+        margin-left: 50px;
+        width: 200px;
+        
+      
+    }
+
+    #section-cok-satanlar{  
+        margin-left: 50px;
+        width: 200px;
+        
+      
+    }
+
+    #arama{
+        width: 95%;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .arama{
+        width:90%;
+        border: 2px solid gray;
+        border-radius: 20px;
+        
+    }
+    #arama-buton{
+        
+        margin-right: 5px;
+        padding: 3px;
+        background: orange;
+        border: 2px solid gray;
+        background: white;
+        color: orange;
+
+    }
+
+    #arama-buton:hover{
+        
+        margin-right: 5px;
+        padding: 3px;
+        background: orange;
+        border: 2px solid gray;
+        background: orange;
+        color: white;
+        cursor:pointer
+
+
+    }
+    
+
+    
+
+}
+
+
+
+
+
+#gotopbuton{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    bottom:50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color:white;
+    border-radius: 100%;
+}
+
+@media (max-height: 800px){
+
+    #gotopbuton{
+        display: none ;
+    }
+
+    
+
+}
+
+.blink{
+    animation: blink 1s linear infinite;
+    color:red;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: 10;}
+    100%{opacity: 15;}
+    }
+
+
+.firsatlar .karsilastir-buton{
+    cursor: pointer;
+    font-size: 15px;
+    color:orange;
+    background-color: white;
+    border: 2px solid orange;
+    padding: 3px;
+    display: none;
+    float:right;
+    
+}
+
+.firsatlar:hover .karsilastir-buton{
+    display:block;
+}
+
+.cok-satanlar .karsilastir-buton{
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color:orange;
+    background-color: white;
+    border: 2px solid orange;
+    padding: 3px;
+    display: none;
+    float:right
+    
+    
+}
+
+
+.cok-satanlar:hover .karsilastir-buton{
+    display:block;
+}
+
+
+.karsilastir-buton:hover{
+    background-color: orange;
+    color:white;
+}
+
+
+
+
+
+
+
+

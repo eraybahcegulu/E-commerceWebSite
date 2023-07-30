@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Nunito;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.iletisim-ekrani{
+    margin:auto;
+}
+
+.form{
+    position: relative;
+    background: white;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    border: 3px solid orange;
+    border-radius: 2%;
+    
+}
+
+.form input{
+    outline: 1;
+    background: white;
+    width: 100%;
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin: 0 0 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size:14px;
+    margin-top: 5px;
+    
+}
+
+textarea{
+    margin-top: 5px;
+}
+
+.iletisim-button{
+    
+    outline: 0;
+    background: orange;
+    width: 100px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.iletisim-button:hover{
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+textarea{
+    border: 2px solid gray;
+    height: 100px;
+    width: 535px;
+    resize: none;
+}
+
